@@ -1,17 +1,8 @@
 <template>
- <nav-bar></nav-bar>
+   <nav-bar></nav-bar>
+  <router-view></router-view>
 </template>
 
-<script>
+<script></script>
 
-
-
-export default {
- 
-}
-</script>
-
-<style>
-
-
-</style>
+<style></style>

@@ -1,9 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Bikes Mania</a>
+      <a class="navbar-brand text-white" href="#">Bikes Mania</a>
+  
       <button
-        class="navbar-toggler"
+        class="navbar-toggler "
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -16,7 +17,12 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <!-- <a class="nav-link active text-white" aria-current="page" href="/home">Home</a> -->
+            <router-link class="nav-link active text-white" aria-current="page" to="/home">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link active text-white" aria-current="page" href="/bikes-list">Latest Bikes</a> -->
+            <router-link class="nav-link active text-white" aria-current="page" to="/bikes-list">Latest Bikes</router-link>
           </li>
         </ul>
       </div>

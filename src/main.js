@@ -3,6 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createRouter,createWebHistory } from 'vue-router';
 import App from './App.vue'
 import NavBar from './components/common/NavBar.vue'
+import BikesList from './components/Bikes/BikesList.vue'
+import TheCarousel from './components/common/TheCarousel.vue'
+
+import TheHome from './components/common/TheHome.vue'
+import 'jquery/src/jquery.js';
+import 'popper.js/dist/popper.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 const router=createRouter({
     history:createWebHistory(),
@@ -10,9 +17,12 @@ const router=createRouter({
         // {
         //     path:'/',redirect:'/teams'
         // },
-        // {
-        //     path:'/teams',component:TeamList,alias:"/"
-        // },
+        {
+            path:'/home',component:TheHome,alias:"/"
+        },
+        {
+            path:'/bikes-list',component:BikesList,alias:"/"
+        },
         // {
         //     path:'/users',component:UserList
         // },
@@ -29,6 +39,7 @@ const router=createRouter({
 const app = createApp(App)
 
 app.component('nav-bar', NavBar);
+app.component('the-carousel', TheCarousel);
 
 app.use(router);
 
