@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+  <nav class="navbar navbar-expand-lg navbar-light  ">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">Bikes Mania</a>
+      <a class="navbar-brand " href="#">Bikes Mania</a>
   
       <button
         class="navbar-toggler "
@@ -18,12 +18,22 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <!-- <a class="nav-link active text-white" aria-current="page" href="/home">Home</a> -->
-            <router-link class="nav-link active text-white" aria-current="page" to="/home">Home</router-link>
+            <router-link class="nav-link active " aria-current="page" to="/home">Home</router-link>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link active text-white" aria-current="page" href="/bikes-list">Latest Bikes</a> -->
-            <router-link class="nav-link active text-white" aria-current="page" to="/bikes-list">Latest Bikes</router-link>
+            <router-link class="nav-link active" aria-current="page" to="/bikes-list">Latest Bikes</router-link>
           </li>
+          
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><router-link class="nav-link active " aria-current="page" to="/admin-login">Admin Logon</router-link></li>
+          </ul>
+        </li>
+
         </ul>
       </div>
     </div>

@@ -2,14 +2,16 @@ import { createApp } from 'vue'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createRouter,createWebHistory } from 'vue-router';
 import App from './App.vue'
-import NavBar from './components/common/NavBar.vue'
-import BikesList from './components/Bikes/BikesList.vue'
-import TheCarousel from './components/common/TheCarousel.vue'
-
-import TheHome from './components/common/TheHome.vue'
 import 'jquery/src/jquery.js';
 import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
+
+import NavBar from './components/common/NavBar.vue';
+import BikesList from './components/Bikes/BikesList.vue';
+import TheCarousel from './components/common/TheCarousel.vue';
+import TheHome from './components/common/TheHome.vue';
+import AdminLogin from './components/Admin/AdminLogin.vue';
+import AdminDash from './components/Admin/AdminDash.vue';
 
 const router=createRouter({
     history:createWebHistory(),
@@ -21,7 +23,13 @@ const router=createRouter({
             path:'/home',component:TheHome,alias:"/"
         },
         {
-            path:'/bikes-list',component:BikesList,alias:"/"
+            path:'/bikes-list',component:BikesList,
+        },
+        {
+            path:'/admin-login',component:AdminLogin,
+        },
+        {
+            path:'/admin-dash',component:AdminDash,
         },
         // {
         //     path:'/users',component:UserList
