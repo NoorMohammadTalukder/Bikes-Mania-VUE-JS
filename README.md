@@ -1,5 +1,5 @@
 <h1>Bikes Mania </h1>
-<p> This is a simple vue js route application where admin can add bikes and bike list automiticallty load from database. </p> 
+<p> This is a simple vue js route application where admin can add bikes and bike list automatically  load from database. </p> 
 <h3>Live Website: https://melodious-sorbet-f8d71e.netlify.app/</h3>
 
 
