@@ -16,7 +16,7 @@
 <ul>
   <li>User can navigate multiple pages</li>
   <li>Admin Login System</li>
-  <li>Admin Lcan add bikes</li>
+  <li>Admin can add bikes</li>
   <li>Car list load from database</li>
   
 </ul>
